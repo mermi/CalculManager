@@ -34,13 +34,12 @@ public class CalculManager{
 	public double calculerMultiplication(){
 		return this.valeur1*this.valeur2;
 	}
-	public float calculerDivision(){
-		//return (float) (this.valeur1/ this.valeur2);
+	public double calculerDivision(){
 		try {
-			return (float) (this.valeur1/ this.valeur2);
-	        
+			double d=(this.valeur1/ this.valeur2);
+	        return d;
 	    } catch (ArithmeticException e) {
-	       System.out.println("ArithmeticException occured!");
+	       System.out.println("Divison par zéro !");
 	    }
 		return 0;
 		
